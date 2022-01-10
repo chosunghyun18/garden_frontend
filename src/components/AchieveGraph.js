@@ -15,8 +15,8 @@ class AchieveGraph extends React.Component {
     bookmarked: false,
     attendance: {},
     period: 26,
-    start_date: "2021-02-01",
-    end_date: "2021-02-26",
+    start_date: "2022-01-10",
+    end_date: "2022-01-30",
   };
 
   componentDidMount() {

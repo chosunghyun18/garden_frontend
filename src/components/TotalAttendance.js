@@ -5,9 +5,9 @@ import { getKoreaDateString } from "../libs";
 
 class TotalAttendance extends React.Component {
   state = {
-    start_date: "2021-01-01",
-    end_date: "2021-01-31",
-    period: 29,
+    start_date: "2022-01-10",
+    end_date: "2022-01-30",
+    period: 21,
   };
 
   componentDidMount() {
@@ -114,7 +114,7 @@ class TotalAttendance extends React.Component {
       <div className="TotalAttendance">
         <br />
         <h1>전체 출석부</h1>
-        <h4>1차: 2021.01.01 ~ 2021.01.29</h4>
+        <h4>1차: 2022.01.10 ~ 2022.01.30</h4>
         <h3>한 시간에 한번씩 갱신됩니다!</h3>
         <table className="attendanceTable">
           {this.state.data ? this.buildCalendar() : null}
