@@ -8,7 +8,7 @@ class Header extends React.Component {
           HUFS GARDEN
         </div>
         <h3>정원사들_in_DSC</h3>
-        <h4>1차: 2021.01.11 ~ 2021.01.29</h4>
+        <h4>1차: 2022.01.10 ~ 2022.01.30</h4>
       </>
     );
   }
