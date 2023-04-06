@@ -11,12 +11,12 @@ import { getKoreaDateString } from "../libs";
 
 class AchieveGraph extends React.Component {
   state = {
-    githubID: "",
+    githubID: "chosunghyun18",
     bookmarked: false,
     attendance: {},
     period: 26,
-    start_date: "2022-01-10",
-    end_date: "2022-01-30",
+    start_date: "2023-04-12",
+    end_date: "2023-04-13",
   };
 
   componentDidMount() {
@@ -83,7 +83,7 @@ class AchieveGraph extends React.Component {
     for (let i = 0; i < Object.keys(attendance).length; i++) {
       attendance_data.push(attendance[Object.keys(attendance)[i]]);
     }
-    // 최적화 어떻게 하면 좋을지???
+
     const todayString = getKoreaDateString(new Date());
 
     for (let i = 0; i < attendance_data.length; ++i) {
@@ -91,8 +91,9 @@ class AchieveGraph extends React.Component {
       if (attendance_data.length < 1) {
         break;
       }
-      total_attendance_count += Object.keys(attendance_data[i]["commits"])
-        .length;
+      total_attendance_count += Object.keys(
+        attendance_data[i]["commits"]
+      ).length;
       if (todayString in attendance_data[i]["commits"]) {
         today_attendance_count += 1;
       }
@@ -120,10 +121,6 @@ class AchieveGraph extends React.Component {
       alert(this.state.githubID + "님 환영합니다!");
     } else {
       alert("존재하지 않는 ID입니다.");
-      // this.setState({
-      //     ...this.state,
-      //     "githubID": ''
-      // })
     }
   };
 
