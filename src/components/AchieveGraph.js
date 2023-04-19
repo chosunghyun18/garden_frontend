@@ -11,7 +11,7 @@ import { getKoreaDateString } from "../libs";
 
 class AchieveGraph extends React.Component {
   state = {
-    githubID: "chosunghyun18",
+    githubID: "",
     bookmarked: false,
     attendance: {},
     period: 26,

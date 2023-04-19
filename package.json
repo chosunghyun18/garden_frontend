@@ -22,8 +22,8 @@
     "redux-saga": "^1.1.3"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "startApp": "react-scripts start",
+    "start": "react-scripts start",
+    "start_front": "pm2 start npm --name garden-app-front -- start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://0.0.0.0:3000/"
+  "proxy": "http://localhost:3001"
 }
